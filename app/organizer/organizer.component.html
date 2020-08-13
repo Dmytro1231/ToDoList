@@ -1,0 +1,16 @@
+<table id="table1">
+    <tr>
+        <th>№</th>
+        <th>Задача</th>
+        <th>Дата</th>
+        <th>Статус</th>
+        <th>Удалить</th>
+    </tr>
+    <tr *ngFor="let task of tasks; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ task.title }}</td>
+        <td>{{ task.date }}</td>
+        <td><input type="checkbox"></td>
+        <td><button>&times;</button></td>
+    </tr>
+</table>
